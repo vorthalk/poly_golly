@@ -12,6 +12,8 @@ import tempfile
 import zipfile
 import csv
 import time
+from dotenv import load_dotenv
+from pathlib import Path
 
 # Suppress specific warnings
 warnings.filterwarnings("ignore", message="The value of the smallest subnormal*")
@@ -32,6 +34,8 @@ if not os.path.exists(OUTPUT_DIR):
 # Load secrets from environment variables
 # Ensure these environment variables are set before running this script:
 #   GEMINI_API_KEY
+# Load .env from Backend folder if present
+load_dotenv(dotenv_path=Path(__file__).resolve().parent / ".env", override=False)
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
 
 if not GEMINI_API_KEY:
