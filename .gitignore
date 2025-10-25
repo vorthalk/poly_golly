@@ -1,0 +1,158 @@
+# =====================
+# General
+# =====================
+# Logs and diagnostics
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# =====================
+# Node / JS (Frontend - Create React App)
+# =====================
+Frontend/node_modules/
+Frontend/build/
+Frontend/coverage/
+Frontend/.eslintcache
+Frontend/npm-debug.log*
+Frontend/yarn-debug.log*
+Frontend/yarn-error.log*
+
+# Frontend tools (unused frameworks removed)
+
+# Test artifacts
+
+# Package manager local state
+.npmrc
+.yarn/
+.yarn/cache/
+.yarn/unplugged/
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+
+# =====================
+# Python
+# =====================
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Distribution / packaging
+build/
+dist/
+.eggs/
+*.egg-info/
+
+# Test and tooling caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pyre/
+.coverage
+coverage.xml
+htmlcov/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Databases and data
+*.sqlite3
+*.db
+*.sqlite
+
+# Backend
+Backend/__pycache__/
+Backend/*.py[cod]
+Backend/.venv/
+Backend/venv311/
+Backend/venv/
+Backend/venv*/
+Backend/env/
+Backend/build/
+Backend/dist/
+Backend/.eggs/
+Backend/*.egg-info/
+Backend/.pytest_cache/
+Backend/.mypy_cache/
+Backend/.ruff_cache/
+Backend/.pyre/
+Backend/.coverage
+Backend/coverage.xml
+Backend/htmlcov/
+Backend/.ipynb_checkpoints/
+Backend/*.sqlite3
+Backend/*.db
+Backend/*.sqlite
+Backend/.env
+Backend/.env.*
+
+# =====================
+# Secrets & environment
+# =====================
+.env
+.env.*
+*.env
+*.env.*
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Private keys and credentials
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+*.jks
+*.keystore
+
+# Cloud/CLI creds (ensure not committed)
+.aws/
+.azure/
+.gcloud/
+netlify.toml.local
+firebase-debug.log
+
+# =====================
+# IDE / Editor
+# =====================
+.idea/
+.vscode/
+*.code-workspace
+*.sublime-project
+*.sublime-workspace
+
+# =====================
+# Misc build artifacts
+# =====================
+.tmp/
+.temp/
+.cache/
+.sass-cache/
+.nyc_output/
+
+# Lock files are generally committed; do not ignore them by default
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+# poetry.lock
+# Pipfile.lock
+
+Policies/
+Backend/converted_files/

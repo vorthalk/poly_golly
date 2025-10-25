@@ -1,0 +1,400 @@
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header {
+  background-color: #282c34;
+  padding: 1rem;
+  color: white;
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.app-header nav {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.app-header button {
+  background-color: #61dafb;
+  border: none;
+  color: #282c34;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.app-header button:hover {
+  background-color: #4fa8c7;
+}
+
+.app-content {
+  flex: 1;
+  padding: 2rem;
+  background-color: #f5f5f5;
+}
+
+/* Markdown Converter Styles */
+.markdown-converter,
+.chunk-converter,
+.definitions-manager {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.markdown-converter h2,
+.chunk-converter h2,
+.definitions-manager h2 {
+  margin-top: 0;
+  color: #282c34;
+  margin-bottom: 1.5rem;
+}
+
+.upload-section {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.button-group {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.upload-button {
+  background-color: #61dafb;
+  color: #282c34;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.upload-button.change-button {
+  background-color: #4fa8c7;
+}
+
+.upload-button.change-button:hover {
+  background-color: #3d8ba8;
+}
+
+.upload-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.error-message {
+  color: #dc3545;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.preview-section {
+  margin-top: 2rem;
+  border-top: 1px solid #eee;
+  padding-top: 1rem;
+}
+
+.preview-section h3 {
+  color: #282c34;
+  margin-bottom: 1rem;
+}
+
+.markdown-preview {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-radius: 4px;
+  border: 1px solid #dee2e6;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  max-height: 400px;
+  overflow-y: auto;
+  font-family: monospace;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* Chunk Preview Styles */
+.chunks-preview {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.chunk-item {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  padding: 1rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.chunk-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.chunk-item h4 {
+  margin: 0 0 0.5rem 0;
+  color: #282c34;
+  font-size: 1rem;
+}
+
+.chunk-item p {
+  margin: 0.25rem 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.chunk-item p:last-child {
+  margin-top: 0.5rem;
+  font-weight: 500;
+  color: #61dafb;
+}
+
+/* Definitions Table Styles */
+.definitions-preview {
+  margin-top: 2rem;
+}
+
+.table-container {
+  overflow-x: auto;
+  margin-top: 1rem;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+}
+
+.definitions-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+.definitions-table th,
+.definitions-table td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.definitions-table th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  color: #282c34;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.definitions-table tr:hover {
+  background-color: #f8f9fa;
+}
+
+.definitions-table td {
+  color: #495057;
+}
+
+.definitions-table tr:last-child td {
+  border-bottom: none;
+}
+
+/* Glossary Manager Styles */
+.glossary-manager {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.glossary-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.glossary-button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.glossary-button.build-button {
+  background-color: #61dafb;
+  color: #282c34;
+}
+
+.glossary-button.build-button:hover {
+  background-color: #4fa8c7;
+}
+
+.glossary-button.view-button {
+  background-color: #4fa8c7;
+  color: #282c34;
+}
+
+.glossary-button.view-button:hover {
+  background-color: #3d8ba8;
+}
+
+.build-glossary-section,
+.view-glossary-section {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+}
+
+.glossary-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+.glossary-table th,
+.glossary-table td {
+  padding: 8px;
+  border: 1px solid #ddd;
+  text-align: left;
+  vertical-align: top;
+}
+
+.glossary-table th {
+  padding: 12px 8px;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  text-align: left;
+  font-weight: bold;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  vertical-align: top;
+}
+
+.glossary-table tr:hover {
+  background-color: #f8f9fa;
+}
+
+.glossary-table td {
+  color: #495057;
+}
+
+.glossary-table tr:last-child td {
+  border-bottom: none;
+}
+
+.warning-message {
+  background-color: #fff3cd;
+  color: #856404;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  border: 1px solid #ffeeba;
+}
+
+.progress-container {
+  margin-top: 0;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  border: 1px solid #dee2e6;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 20px;
+  background-color: #e9ecef;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  margin-top: 0.5rem;
+  border: 1px solid #dee2e6;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background-color: #61dafb;
+  transition: width 0.3s ease-in-out;
+}
+
+.progress-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #282c34;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-shadow: 0 0 2px white;
+}
+
+.build-glossary-section {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.build-glossary-section h3 {
+  margin-bottom: 0.5rem;
+  color: #282c34;
+}
+
+.build-glossary-section .upload-section {
+  margin-top: 0;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  border: 1px solid #dee2e6;
+}
+
+.sort-controls {
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.sort-controls label {
+  font-weight: 500;
+  color: #282c34;
+}
+
+.term-select {
+  padding: 0.5rem;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  background-color: white;
+  min-width: 200px;
+  font-size: 0.9rem;
+}
+
+.term-select:focus {
+  outline: none;
+  border-color: #61dafb;
+  box-shadow: 0 0 0 2px rgba(97, 218, 251, 0.2);
+}
